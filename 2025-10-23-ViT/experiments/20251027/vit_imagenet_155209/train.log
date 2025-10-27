@@ -1,0 +1,3 @@
+2025-10-27 15:52:09,782 - INFO - Starting Vision Transformer training script
+2025-10-27 15:52:09,782 - INFO - Arguments: {'model': 'vit', 'image_size': 224, 'patch_size': 16, 'dim': 384, 'depth': 12, 'heads': 6, 'num_kv_heads': 3, 'mlp_dim': 1536, 'dropout': 0.1, 'emb_dropout': 0.1, 'dim_head': 64, 'pool': 'cls', 'dataset': 'imagenet', 'data_dir': '/root/autodl-tmp/imagenet', 'batch_size': 256, 'num_workers': 4, 'epochs': 90, 'lr': 0.003, 'optimizer': 'adamw', 'weight_decay': 0.3, 'clip_grad_norm': 1.0, 'output_dir': './experiments/20251027/vit_imagenet_155209', 'resume': None}
+2025-10-27 15:52:09,782 - INFO - Distributed training detected: WORLD_SIZE=8, RANK=0
