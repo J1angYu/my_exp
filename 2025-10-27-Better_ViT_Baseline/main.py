@@ -18,6 +18,7 @@ from utils import (
     misc
 )
 from plain_vit import create_plain_vit_small
+from torch.utils.tensorboard import SummaryWriter
 
 
 def get_args_parser():
@@ -57,7 +58,7 @@ def get_args_parser():
     # Dataset parameters
     parser.add_argument('--data_path', default='/path/to/imagenet',
                         help='dataset path')
-    parser.add_argument('--output_dir', default='.',
+    parser.add_argument('--output_dir', default=f'./experiments/{datetime.datetime.now().strftime("%Y%m%d_%H%M%S")}',
                         help='path where to save checkpoints')
     parser.add_argument('--device', default='cuda',
                         help='device to use for training')
@@ -80,7 +81,7 @@ def main(args):
     misc.init_distributed_mode(args)
 
     print('job dir: {}'.format(os.path.dirname(os.path.realpath(__file__))))
-    print("{}".format(args).replace(', ', ',\n'))
+    print("{}".format(args))
     device = torch.device(args.device)
     set_seed(args)
 
@@ -160,6 +161,12 @@ def main(args):
     print(f"Start training for {args.epochs} epochs")
     start_time = time.time()
 
+    writer = None
+    if args.output_dir and misc.is_main_process():
+        tb_dir = os.path.join(args.output_dir, "tensorboard")
+        Path(tb_dir).mkdir(parents=True, exist_ok=True)
+        writer = SummaryWriter(log_dir=tb_dir)
+
     for epoch in range(args.epochs):
         if args.distributed:
             data_loader_train.sampler.set_epoch(epoch)
@@ -170,6 +177,14 @@ def main(args):
             mixup_fn, args=args,
         )
         test_stats = evaluate(data_loader_val, model, device)
+
+        if writer is not None:
+            writer.add_scalar('loss/train', train_stats.get('loss'), epoch)
+            writer.add_scalar('loss/test', test_stats.get('loss'), epoch)
+            writer.add_scalar('train/lr', train_stats.get('lr'), epoch)
+            writer.add_scalar('test/acc1', test_stats.get('acc1'), epoch)
+            writer.add_scalar('test/acc5', test_stats.get('acc5'), epoch)
+
         print(f"Accuracy of the model on {len(dataset_val)} test images: {test_stats['acc1']:.1f}%")
 
         log_stats = {
@@ -191,6 +206,11 @@ def main(args):
     total_time = time.time() - start_time
     total_time_str = str(datetime.timedelta(seconds=int(total_time)))
     print('Training time {}'.format(total_time_str))
+
+    if torch.distributed.is_available() and torch.distributed.is_initialized():
+        torch.distributed.destroy_process_group()
+    if writer is not None:
+        writer.close()
 
 
 def train_one_epoch(model, data_loader,
