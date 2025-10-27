@@ -1,0 +1,24 @@
+2025-10-22 10:34:01,933 - INFO - Starting U-Net training script
+2025-10-22 10:34:01,933 - INFO - Arguments: {'epochs': 5, 'channels': 3, 'batch_size': 1, 'lr': 1e-06, 'load': False, 'scale': 0.5, 'val': 10.0, 'bilinear': False, 'classes': 2, 'output_dir': './experiments/unet_20251022_103401'}
+2025-10-22 10:34:01,934 - INFO - Using device cuda
+2025-10-22 10:34:02,227 - INFO - Network:
+	3 input channels
+	2 output channels (classes)
+	Transposed Conv upscaling
+2025-10-22 10:34:02,659 - INFO - Creating dataset with 5088 examples
+2025-10-22 10:34:02,660 - INFO - Scanning mask files to determine unique values
+2025-10-22 10:34:10,649 - INFO - Unique mask values: [0, 1]
+2025-10-22 10:34:10,658 - INFO - Starting training:
+        Epochs:          5
+        Batch size:      1
+        Learning rate:   1e-06
+        Training size:   4580
+        Validation size: 508
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  0.5
+    
+2025-10-22 10:35:51,686 - INFO - Validation Dice score: 0.9280058145523071
+2025-10-22 10:37:35,511 - INFO - Validation Dice score: 0.95843106508255
+2025-10-22 10:38:43,649 - INFO - Validation Dice score: 0.953773558139801
+2025-10-22 10:40:11,170 - INFO - Validation Dice score: 0.963019609451294

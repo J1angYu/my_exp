@@ -1,0 +1,51 @@
+2025-10-22 10:42:42,674 - INFO - Starting U-Net training script
+2025-10-22 10:42:42,674 - INFO - Arguments: {'epochs': 5, 'channels': 3, 'batch_size': 1, 'lr': 1e-05, 'load': False, 'scale': 0.5, 'val': 10.0, 'bilinear': False, 'classes': 2, 'output_dir': './experiments/unet_20251022_104242'}
+2025-10-22 10:42:42,674 - INFO - Using device cuda
+2025-10-22 10:42:42,952 - INFO - Network:
+	3 input channels
+	2 output channels (classes)
+	Transposed Conv upscaling
+2025-10-22 10:42:43,347 - INFO - Creating dataset with 5088 examples
+2025-10-22 10:42:43,347 - INFO - Scanning mask files to determine unique values
+2025-10-22 10:42:51,323 - INFO - Unique mask values: [0, 1]
+2025-10-22 10:42:51,330 - INFO - Starting training:
+        Epochs:          5
+        Batch size:      1
+        Learning rate:   1e-05
+        Training size:   4580
+        Validation size: 508
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  0.5
+    
+2025-10-22 10:44:04,864 - INFO - Validation Dice score: 0.9420793056488037
+2025-10-22 10:45:15,289 - INFO - Validation Dice score: 0.9629942774772644
+2025-10-22 10:46:24,272 - INFO - Validation Dice score: 0.9508219361305237
+2025-10-22 10:47:34,063 - INFO - Validation Dice score: 0.9739078283309937
+2025-10-22 10:48:43,279 - INFO - Validation Dice score: 0.9632511138916016
+2025-10-22 10:48:44,751 - INFO - Checkpoint 1 saved!
+2025-10-22 10:49:54,981 - INFO - Validation Dice score: 0.9649861454963684
+2025-10-22 10:51:04,604 - INFO - Validation Dice score: 0.9795985221862793
+2025-10-22 10:52:20,045 - INFO - Validation Dice score: 0.9522354006767273
+2025-10-22 10:53:28,370 - INFO - Validation Dice score: 0.9768222570419312
+2025-10-22 10:54:36,840 - INFO - Validation Dice score: 0.9750020503997803
+2025-10-22 10:54:37,926 - INFO - Checkpoint 2 saved!
+2025-10-22 10:55:49,820 - INFO - Validation Dice score: 0.9790247082710266
+2025-10-22 10:56:57,273 - INFO - Validation Dice score: 0.9746622443199158
+2025-10-22 10:58:04,584 - INFO - Validation Dice score: 0.955316960811615
+2025-10-22 10:59:12,038 - INFO - Validation Dice score: 0.9581562280654907
+2025-10-22 11:00:21,442 - INFO - Validation Dice score: 0.9554626941680908
+2025-10-22 11:00:22,534 - INFO - Checkpoint 3 saved!
+2025-10-22 11:01:33,620 - INFO - Validation Dice score: 0.9472141861915588
+2025-10-22 11:02:42,674 - INFO - Validation Dice score: 0.9494082927703857
+2025-10-22 11:03:53,390 - INFO - Validation Dice score: 0.9635100364685059
+2025-10-22 11:05:01,730 - INFO - Validation Dice score: 0.9639672636985779
+2025-10-22 11:06:11,515 - INFO - Validation Dice score: 0.9656282067298889
+2025-10-22 11:06:12,598 - INFO - Checkpoint 4 saved!
+2025-10-22 11:07:23,941 - INFO - Validation Dice score: 0.9773210287094116
+2025-10-22 11:08:31,894 - INFO - Validation Dice score: 0.9772414565086365
+2025-10-22 11:09:39,498 - INFO - Validation Dice score: 0.969768226146698
+2025-10-22 11:10:47,595 - INFO - Validation Dice score: 0.9655148386955261
+2025-10-22 11:11:55,485 - INFO - Validation Dice score: 0.9750563502311707
+2025-10-22 11:11:56,520 - INFO - Checkpoint 5 saved!
+2025-10-22 11:11:56,521 - INFO - Training completed. TensorBoard logs saved.

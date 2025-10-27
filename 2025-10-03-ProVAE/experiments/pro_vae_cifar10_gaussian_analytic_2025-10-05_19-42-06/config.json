@@ -1,0 +1,19 @@
+{
+    "exp_name": "pro_vae_cifar10_gaussian_analytic",
+    "data_path": "./data",
+    "dataset": "cifar10",
+    "z_dim": 20,
+    "batch_size": 128,
+    "lr": 0.001,
+    "seed": 42,
+    "recon": "gaussian",
+    "kl": "analytic",
+    "beta": 1.0,
+    "betas": [0.9, 0.99],
+    "epochs_per_stage": 10,
+    "fadein_ratio": 0.5,
+    "start_res": 4,
+    "final_res": 32,
+    "base_ch": 128,
+    "min_ch": 16
+}

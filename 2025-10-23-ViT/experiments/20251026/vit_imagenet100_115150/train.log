@@ -1,0 +1,71 @@
+2025-10-26 11:51:50,440 - INFO - Starting Vision Transformer training script
+2025-10-26 11:51:50,440 - INFO - Arguments: {'model': 'vit', 'image_size': 224, 'patch_size': 16, 'dim': 384, 'depth': 12, 'heads': 6, 'mlp_dim': 1536, 'dropout': 0.1, 'emb_dropout': 0.1, 'dim_head': 64, 'pool': 'cls', 'dataset': 'imagenet100', 'data_dir': '../data/imagenet100', 'batch_size': 128, 'num_workers': 8, 'epochs': 100, 'lr': 0.001, 'optimizer': 'adam', 'output_dir': './experiments/20251026/vit_imagenet100_115150', 'local_rank': 0, 'world_size': 4}
+2025-10-26 11:51:50,847 - INFO - Using device: cuda:0, World size: 4
+2025-10-26 11:51:51,237 - INFO - Dataset: imagenet100, Input channels: 3, Classes: 100
+2025-10-26 11:51:52,815 - INFO - Using model: vit
+2025-10-26 11:51:52,817 - INFO - Using TensorBoard for visualization
+2025-10-26 11:51:52,817 - INFO - Starting training for 100 epochs
+2025-10-26 11:51:52,817 - INFO - Epoch 1/100 (lr=0.001000)
+2025-10-26 11:53:16,610 - INFO - Train Loss: 4.0660, Train Acc: 7.27%, Val Loss: 3.8109, Val Acc: 10.96%
+2025-10-26 11:53:16,771 - INFO - New best model saved with accuracy: 10.96%
+2025-10-26 11:53:16,771 - INFO - Epoch 2/100 (lr=0.001000)
+2025-10-26 11:54:39,668 - INFO - Train Loss: 3.6032, Train Acc: 14.38%, Val Loss: 3.5078, Val Acc: 17.20%
+2025-10-26 11:54:40,401 - INFO - New best model saved with accuracy: 17.20%
+2025-10-26 11:54:40,402 - INFO - Epoch 3/100 (lr=0.000999)
+2025-10-26 11:56:03,846 - INFO - Train Loss: 3.3203, Train Acc: 19.63%, Val Loss: 3.2474, Val Acc: 21.44%
+2025-10-26 11:56:04,437 - INFO - New best model saved with accuracy: 21.44%
+2025-10-26 11:56:04,438 - INFO - Epoch 4/100 (lr=0.000998)
+2025-10-26 11:57:28,125 - INFO - Train Loss: 3.1113, Train Acc: 23.86%, Val Loss: 3.1162, Val Acc: 24.16%
+2025-10-26 11:57:28,681 - INFO - New best model saved with accuracy: 24.16%
+2025-10-26 11:57:28,682 - INFO - Epoch 5/100 (lr=0.000996)
+2025-10-26 11:58:52,361 - INFO - Train Loss: 2.9600, Train Acc: 26.64%, Val Loss: 3.0127, Val Acc: 27.12%
+2025-10-26 11:58:52,956 - INFO - New best model saved with accuracy: 27.12%
+2025-10-26 11:58:52,956 - INFO - Epoch 6/100 (lr=0.000994)
+2025-10-26 12:00:16,837 - INFO - Train Loss: 2.8209, Train Acc: 29.20%, Val Loss: 2.9696, Val Acc: 28.80%
+2025-10-26 12:00:17,517 - INFO - New best model saved with accuracy: 28.80%
+2025-10-26 12:00:17,519 - INFO - Epoch 7/100 (lr=0.000991)
+2025-10-26 12:01:41,112 - INFO - Train Loss: 2.6897, Train Acc: 32.16%, Val Loss: 2.9055, Val Acc: 28.08%
+2025-10-26 12:01:41,113 - INFO - Epoch 8/100 (lr=0.000988)
+2025-10-26 12:03:04,527 - INFO - Train Loss: 2.5633, Train Acc: 34.38%, Val Loss: 2.7873, Val Acc: 31.68%
+2025-10-26 12:03:05,163 - INFO - New best model saved with accuracy: 31.68%
+2025-10-26 12:03:05,166 - INFO - Epoch 9/100 (lr=0.000984)
+2025-10-26 12:04:28,854 - INFO - Train Loss: 2.4398, Train Acc: 37.03%, Val Loss: 2.7387, Val Acc: 33.68%
+2025-10-26 12:04:29,450 - INFO - New best model saved with accuracy: 33.68%
+2025-10-26 12:04:29,450 - INFO - Epoch 10/100 (lr=0.000980)
+2025-10-26 12:05:52,800 - INFO - Train Loss: 2.3239, Train Acc: 39.73%, Val Loss: 2.7236, Val Acc: 33.12%
+2025-10-26 12:05:52,800 - INFO - Epoch 11/100 (lr=0.000976)
+2025-10-26 12:07:16,255 - INFO - Train Loss: 2.1968, Train Acc: 42.18%, Val Loss: 2.7000, Val Acc: 34.40%
+2025-10-26 12:07:16,814 - INFO - New best model saved with accuracy: 34.40%
+2025-10-26 12:07:16,814 - INFO - Epoch 12/100 (lr=0.000970)
+2025-10-26 12:08:40,468 - INFO - Train Loss: 2.0753, Train Acc: 44.72%, Val Loss: 2.6950, Val Acc: 35.68%
+2025-10-26 12:08:41,203 - INFO - New best model saved with accuracy: 35.68%
+2025-10-26 12:08:41,205 - INFO - Epoch 13/100 (lr=0.000965)
+2025-10-26 12:10:04,905 - INFO - Train Loss: 1.9564, Train Acc: 47.58%, Val Loss: 2.7453, Val Acc: 34.08%
+2025-10-26 12:10:04,906 - INFO - Epoch 14/100 (lr=0.000959)
+2025-10-26 12:11:28,673 - INFO - Train Loss: 1.8457, Train Acc: 49.67%, Val Loss: 2.8477, Val Acc: 36.00%
+2025-10-26 12:11:29,263 - INFO - New best model saved with accuracy: 36.00%
+2025-10-26 12:11:29,263 - INFO - Epoch 15/100 (lr=0.000952)
+2025-10-26 12:12:52,740 - INFO - Train Loss: 1.7478, Train Acc: 51.93%, Val Loss: 2.9603, Val Acc: 34.00%
+2025-10-26 12:12:52,741 - INFO - Epoch 16/100 (lr=0.000946)
+2025-10-26 12:14:16,503 - INFO - Train Loss: 1.6412, Train Acc: 54.02%, Val Loss: 2.9909, Val Acc: 35.04%
+2025-10-26 12:14:16,505 - INFO - Epoch 17/100 (lr=0.000938)
+2025-10-26 12:15:40,048 - INFO - Train Loss: 1.5324, Train Acc: 56.66%, Val Loss: 3.0903, Val Acc: 33.68%
+2025-10-26 12:15:40,049 - INFO - Epoch 18/100 (lr=0.000930)
+2025-10-26 12:17:03,455 - INFO - Train Loss: 1.4379, Train Acc: 58.71%, Val Loss: 3.1503, Val Acc: 35.12%
+2025-10-26 12:17:03,457 - INFO - Epoch 19/100 (lr=0.000922)
+2025-10-26 12:18:26,947 - INFO - Train Loss: 1.3344, Train Acc: 61.56%, Val Loss: 3.1553, Val Acc: 33.76%
+2025-10-26 12:18:26,948 - INFO - Epoch 20/100 (lr=0.000914)
+2025-10-26 12:19:50,371 - INFO - Train Loss: 1.2393, Train Acc: 63.94%, Val Loss: 3.1417, Val Acc: 35.20%
+2025-10-26 12:19:50,373 - INFO - Epoch 21/100 (lr=0.000905)
+2025-10-26 12:21:13,858 - INFO - Train Loss: 1.1186, Train Acc: 66.95%, Val Loss: 3.1766, Val Acc: 35.92%
+2025-10-26 12:21:13,860 - INFO - Epoch 22/100 (lr=0.000895)
+2025-10-26 12:22:37,384 - INFO - Train Loss: 1.0195, Train Acc: 69.40%, Val Loss: 3.3051, Val Acc: 36.00%
+2025-10-26 12:22:37,384 - INFO - Epoch 23/100 (lr=0.000885)
+2025-10-26 12:24:00,681 - INFO - Train Loss: 0.9395, Train Acc: 71.46%, Val Loss: 3.5617, Val Acc: 34.48%
+2025-10-26 12:24:00,682 - INFO - Epoch 24/100 (lr=0.000875)
+2025-10-26 12:25:24,205 - INFO - Train Loss: 0.8718, Train Acc: 73.15%, Val Loss: 3.5301, Val Acc: 33.84%
+2025-10-26 12:25:24,207 - INFO - Epoch 25/100 (lr=0.000864)
+2025-10-26 12:26:47,969 - INFO - Train Loss: 0.7801, Train Acc: 75.94%, Val Loss: 3.6812, Val Acc: 34.00%
+2025-10-26 12:26:47,970 - INFO - Epoch 26/100 (lr=0.000854)
+2025-10-26 12:28:11,698 - INFO - Train Loss: 0.7198, Train Acc: 77.45%, Val Loss: 3.8336, Val Acc: 34.16%
+2025-10-26 12:28:11,700 - INFO - Epoch 27/100 (lr=0.000842)

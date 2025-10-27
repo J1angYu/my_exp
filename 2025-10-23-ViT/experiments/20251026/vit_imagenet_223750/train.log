@@ -1,0 +1,21 @@
+2025-10-26 22:37:50,791 - INFO - Starting Vision Transformer training script
+2025-10-26 22:37:50,791 - INFO - Arguments: {'model': 'vit', 'image_size': 224, 'patch_size': 16, 'dim': 384, 'depth': 12, 'heads': 6, 'num_kv_heads': 3, 'mlp_dim': 1536, 'dropout': 0.1, 'emb_dropout': 0.1, 'dim_head': 64, 'pool': 'cls', 'dataset': 'imagenet', 'data_dir': '../data/imagenet', 'batch_size': 256, 'num_workers': 4, 'epochs': 300, 'lr': 0.001, 'optimizer': 'adam', 'weight_decay': 0.0001, 'clip_grad_norm': 1.0, 'output_dir': './experiments/20251026/vit_imagenet_223750', 'resume': None}
+2025-10-26 22:37:50,791 - INFO - Distributed training detected: WORLD_SIZE=4, RANK=0
+2025-10-26 22:37:51,218 - INFO - Using device: cuda:0, World size: 4, Distributed: True
+2025-10-26 22:37:54,577 - INFO - Dataset: imagenet, Input channels: 3, Classes: 1000
+2025-10-26 22:37:56,213 - INFO - Using model: vit
+2025-10-26 22:37:56,217 - INFO - Using TensorBoard for visualization
+2025-10-26 22:37:56,217 - INFO - Weight decay: 0.0001, Clip grad norm: 1.0
+2025-10-26 22:37:56,217 - INFO - Starting training for 300 epochs
+2025-10-26 22:37:56,217 - INFO - Epoch 1/300 (lr=0.001000)
+2025-10-27 04:16:46,678 - INFO - Train Loss: 5.9409, Train Acc: 3.44%, Val Loss: 5.2497, Val Acc: 7.82%
+2025-10-27 04:16:46,817 - INFO - New best model saved with accuracy: 7.82%
+2025-10-27 04:16:47,159 - INFO - Epoch 2/300 (lr=0.001000)
+2025-10-27 10:43:06,910 - INFO - Starting Vision Transformer training script
+2025-10-27 10:43:06,910 - INFO - Arguments: {'model': 'vit', 'image_size': 224, 'patch_size': 16, 'dim': 384, 'depth': 12, 'heads': 6, 'num_kv_heads': 3, 'mlp_dim': 1536, 'dropout': 0.1, 'emb_dropout': 0.1, 'dim_head': 64, 'pool': 'cls', 'dataset': 'imagenet100', 'data_dir': '../data/imagenet100', 'batch_size': 256, 'num_workers': 4, 'epochs': 300, 'lr': 0.001, 'optimizer': 'adam', 'weight_decay': 0.0001, 'clip_grad_norm': 1.0, 'output_dir': 'experiments/20251026/vit_imagenet_223750', 'resume': 'experiments/20251026/vit_imagenet_223750/checkpoint_last.pth'}
+2025-10-27 10:43:06,910 - INFO - Distributed training detected: WORLD_SIZE=4, RANK=0
+2025-10-27 10:43:07,296 - INFO - Using device: cuda:0, World size: 4, Distributed: True
+2025-10-27 10:43:07,769 - INFO - Dataset: imagenet100, Input channels: 3, Classes: 100
+2025-10-27 10:43:09,410 - INFO - Using model: vit
+2025-10-27 10:43:09,414 - INFO - Using TensorBoard for visualization
+2025-10-27 10:43:09,414 - INFO - Weight decay: 0.0001, Clip grad norm: 1.0

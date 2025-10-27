@@ -1,0 +1,54 @@
+Files already downloaded and verified
+Files already downloaded and verified
+开始训练Progressive VAE (CIFAR10)...
+
+===> Stage 0 (res=4x4) | fade-in epochs: 0/10
+[Stage 0] Epoch 1/10 [alpha 1.00] [beta 1.000] - Loss: -53.2759, Recon: -57.9665, KLD: 4.6906
+[Stage 0] Epoch 2/10 [alpha 1.00] [beta 1.000] - Loss: -71.4101, Recon: -81.1731, KLD: 9.7630
+[Stage 0] Epoch 3/10 [alpha 1.00] [beta 1.000] - Loss: -78.2335, Recon: -90.4397, KLD: 12.2062
+[Stage 0] Epoch 4/10 [alpha 1.00] [beta 1.000] - Loss: -82.4474, Recon: -97.4407, KLD: 14.9934
+[Stage 0] Epoch 5/10 [alpha 1.00] [beta 1.000] - Loss: -85.9067, Recon: -104.1138, KLD: 18.2071
+[Stage 0] Epoch 6/10 [alpha 1.00] [beta 1.000] - Loss: -88.3833, Recon: -108.7908, KLD: 20.4075
+[Stage 0] Epoch 7/10 [alpha 1.00] [beta 1.000] - Loss: -90.0789, Recon: -112.3323, KLD: 22.2534
+[Stage 0] Epoch 8/10 [alpha 1.00] [beta 1.000] - Loss: -91.5264, Recon: -115.6996, KLD: 24.1732
+[Stage 0] Epoch 9/10 [alpha 1.00] [beta 1.000] - Loss: -93.5901, Recon: -120.6305, KLD: 27.0404
+[Stage 0] Epoch 10/10 [alpha 1.00] [beta 1.000] - Loss: -95.5109, Recon: -125.3687, KLD: 29.8578
+
+===> Stage 1 (res=8x8) | fade-in epochs: 5/10
+[Stage 1] Epoch 1/10 [alpha 0.00->0.20] [beta 1.000] - Loss: -323.7825, Recon: -354.3234, KLD: 30.5410
+[Stage 1] Epoch 2/10 [alpha 0.20->0.40] [beta 1.000] - Loss: -332.7151, Recon: -365.6296, KLD: 32.9146
+[Stage 1] Epoch 3/10 [alpha 0.40->0.60] [beta 1.000] - Loss: -340.7539, Recon: -376.6246, KLD: 35.8707
+[Stage 1] Epoch 4/10 [alpha 0.60->0.80] [beta 1.000] - Loss: -345.6802, Recon: -384.5321, KLD: 38.8518
+[Stage 1] Epoch 5/10 [alpha 0.80->1.00] [beta 1.000] - Loss: -351.9289, Recon: -393.2694, KLD: 41.3405
+[Stage 1] Epoch 6/10 [alpha 1.00] [beta 1.000] - Loss: -360.3681, Recon: -405.1177, KLD: 44.7496
+[Stage 1] Epoch 7/10 [alpha 1.00] [beta 1.000] - Loss: -365.5546, Recon: -413.3022, KLD: 47.7476
+[Stage 1] Epoch 8/10 [alpha 1.00] [beta 1.000] - Loss: -368.8946, Recon: -418.3064, KLD: 49.4118
+[Stage 1] Epoch 9/10 [alpha 1.00] [beta 1.000] - Loss: -371.8316, Recon: -422.8714, KLD: 51.0397
+[Stage 1] Epoch 10/10 [alpha 1.00] [beta 1.000] - Loss: -376.3486, Recon: -429.4661, KLD: 53.1175
+
+===> Stage 2 (res=16x16) | fade-in epochs: 5/10
+[Stage 2] Epoch 1/10 [alpha 0.00->0.20] [beta 1.000] - Loss: -1397.2415, Recon: -1470.8016, KLD: 73.5601
+[Stage 2] Epoch 2/10 [alpha 0.20->0.40] [beta 1.000] - Loss: -1414.8319, Recon: -1494.2278, KLD: 79.3959
+[Stage 2] Epoch 3/10 [alpha 0.40->0.60] [beta 1.000] - Loss: -1421.9807, Recon: -1504.5973, KLD: 82.6166
+[Stage 2] Epoch 4/10 [alpha 0.60->0.80] [beta 1.000] - Loss: -1421.5301, Recon: -1506.6355, KLD: 85.1054
+[Stage 2] Epoch 5/10 [alpha 0.80->1.00] [beta 1.000] - Loss: -1431.5227, Recon: -1519.8785, KLD: 88.3558
+[Stage 2] Epoch 6/10 [alpha 1.00] [beta 1.000] - Loss: -1476.5194, Recon: -1570.5277, KLD: 94.0083
+[Stage 2] Epoch 7/10 [alpha 1.00] [beta 1.000] - Loss: -1493.7694, Recon: -1592.5118, KLD: 98.7424
+[Stage 2] Epoch 8/10 [alpha 1.00] [beta 1.000] - Loss: -1512.8011, Recon: -1615.4107, KLD: 102.6096
+[Stage 2] Epoch 9/10 [alpha 1.00] [beta 1.000] - Loss: -1528.9073, Recon: -1635.6995, KLD: 106.7922
+[Stage 2] Epoch 10/10 [alpha 1.00] [beta 1.000] - Loss: -1537.8952, Recon: -1647.3043, KLD: 109.4091
+
+===> Stage 3 (res=32x32) | fade-in epochs: 5/10
+[Stage 3] Epoch 1/10 [alpha 0.00->0.20] [beta 1.000] - Loss: -5854.5641, Recon: -6009.3175, KLD: 154.7534
+[Stage 3] Epoch 2/10 [alpha 0.20->0.40] [beta 1.000] - Loss: -5882.3635, Recon: -6044.8826, KLD: 162.5191
+[Stage 3] Epoch 3/10 [alpha 0.40->0.60] [beta 1.000] - Loss: -5899.8718, Recon: -6067.6349, KLD: 167.7631
+[Stage 3] Epoch 4/10 [alpha 0.60->0.80] [beta 1.000] - Loss: -5834.5139, Recon: -6002.2336, KLD: 167.7197
+[Stage 3] Epoch 5/10 [alpha 0.80->1.00] [beta 1.000] - Loss: -5677.2546, Recon: -5845.8778, KLD: 168.6232
+[Stage 3] Epoch 6/10 [alpha 1.00] [beta 1.000] - Loss: -5913.9249, Recon: -6091.4693, KLD: 177.5444
+[Stage 3] Epoch 7/10 [alpha 1.00] [beta 1.000] - Loss: -6075.5944, Recon: -6259.9076, KLD: 184.3132
+[Stage 3] Epoch 8/10 [alpha 1.00] [beta 1.000] - Loss: -6067.2155, Recon: -6254.7960, KLD: 187.5805
+[Stage 3] Epoch 9/10 [alpha 1.00] [beta 1.000] - Loss: -6134.5099, Recon: -6326.7796, KLD: 192.2697
+[Stage 3] Epoch 10/10 [alpha 1.00] [beta 1.000] - Loss: -6179.2795, Recon: -6375.0546, KLD: 195.7750
+训练完成!
+FID: 146.6663
+结果已保存到 experiments/pro_vae_cifar10_gaussian_mc_2025-10-05_20-33-51

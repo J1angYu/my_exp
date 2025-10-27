@@ -1,0 +1,55 @@
+2025-10-15 00:58:14 - 开始训练 Stage 4
+2025-10-15 00:58:14 - 参数设置: epochs=50, batch_size=128, lr=0.001, device=cuda
+2025-10-15 00:58:14 - 输出目录: experiments/pressvae_2025-10-15_00-58-14
+2025-10-15 00:58:16 - 数据集加载完成，训练样本数: 50000
+2025-10-15 00:58:26 - [Stage 4] Epoch 001  loss/pix=-0.993622  recon/pix=-1.056787  kl/pix=0.063165
+2025-10-15 00:58:31 - [Stage 4] Epoch 002  loss/pix=-1.131911  recon/pix=-1.224148  kl/pix=0.092237
+2025-10-15 00:58:38 - [Stage 4] Epoch 003  loss/pix=-1.169481  recon/pix=-1.273966  kl/pix=0.104485
+2025-10-15 00:58:44 - [Stage 4] Epoch 004  loss/pix=-1.183464  recon/pix=-1.294256  kl/pix=0.110792
+2025-10-15 00:58:50 - [Stage 4] Epoch 005  loss/pix=-1.188387  recon/pix=-1.303010  kl/pix=0.114623
+2025-10-15 00:58:56 - [Stage 4] Epoch 006  loss/pix=-1.191574  recon/pix=-1.308560  kl/pix=0.116986
+2025-10-15 00:59:02 - [Stage 4] Epoch 007  loss/pix=-1.194328  recon/pix=-1.313931  kl/pix=0.119603
+2025-10-15 00:59:08 - [Stage 4] Epoch 008  loss/pix=-1.199525  recon/pix=-1.321915  kl/pix=0.122390
+2025-10-15 00:59:13 - [Stage 4] Epoch 009  loss/pix=-1.201031  recon/pix=-1.325003  kl/pix=0.123972
+2025-10-15 00:59:19 - [Stage 4] Epoch 010  loss/pix=-1.203213  recon/pix=-1.327996  kl/pix=0.124783
+2025-10-15 00:59:25 - [Stage 4] Epoch 011  loss/pix=-1.204180  recon/pix=-1.330004  kl/pix=0.125824
+2025-10-15 00:59:32 - [Stage 4] Epoch 012  loss/pix=-1.205470  recon/pix=-1.331882  kl/pix=0.126413
+2025-10-15 00:59:39 - [Stage 4] Epoch 013  loss/pix=-1.206224  recon/pix=-1.333592  kl/pix=0.127368
+2025-10-15 00:59:46 - [Stage 4] Epoch 014  loss/pix=-1.209193  recon/pix=-1.337764  kl/pix=0.128570
+2025-10-15 00:59:52 - [Stage 4] Epoch 015  loss/pix=-1.210874  recon/pix=-1.340736  kl/pix=0.129862
+2025-10-15 00:59:58 - [Stage 4] Epoch 016  loss/pix=-1.213000  recon/pix=-1.345133  kl/pix=0.132133
+2025-10-15 01:00:03 - [Stage 4] Epoch 017  loss/pix=-1.212693  recon/pix=-1.345176  kl/pix=0.132483
+2025-10-15 01:00:09 - [Stage 4] Epoch 018  loss/pix=-1.215626  recon/pix=-1.348999  kl/pix=0.133373
+2025-10-15 01:00:15 - [Stage 4] Epoch 019  loss/pix=-1.216892  recon/pix=-1.350522  kl/pix=0.133630
+2025-10-15 01:00:20 - [Stage 4] Epoch 020  loss/pix=-1.214808  recon/pix=-1.348662  kl/pix=0.133854
+2025-10-15 01:00:26 - [Stage 4] Epoch 021  loss/pix=-1.217453  recon/pix=-1.352290  kl/pix=0.134838
+2025-10-15 01:00:34 - [Stage 4] Epoch 022  loss/pix=-1.217527  recon/pix=-1.353087  kl/pix=0.135560
+2025-10-15 01:00:40 - [Stage 4] Epoch 023  loss/pix=-1.219013  recon/pix=-1.354037  kl/pix=0.135025
+2025-10-15 01:00:46 - [Stage 4] Epoch 024  loss/pix=-1.219599  recon/pix=-1.355442  kl/pix=0.135843
+2025-10-15 01:00:53 - [Stage 4] Epoch 025  loss/pix=-1.219096  recon/pix=-1.354098  kl/pix=0.135002
+2025-10-15 01:00:59 - [Stage 4] Epoch 026  loss/pix=-1.218908  recon/pix=-1.353775  kl/pix=0.134867
+2025-10-15 01:01:05 - [Stage 4] Epoch 027  loss/pix=-1.222766  recon/pix=-1.358508  kl/pix=0.135742
+2025-10-15 01:01:11 - [Stage 4] Epoch 028  loss/pix=-1.220847  recon/pix=-1.356633  kl/pix=0.135786
+2025-10-15 01:01:16 - [Stage 4] Epoch 029  loss/pix=-1.222953  recon/pix=-1.359260  kl/pix=0.136307
+2025-10-15 01:01:23 - [Stage 4] Epoch 030  loss/pix=-1.222435  recon/pix=-1.358383  kl/pix=0.135948
+2025-10-15 01:01:29 - [Stage 4] Epoch 031  loss/pix=-1.222728  recon/pix=-1.359516  kl/pix=0.136788
+2025-10-15 01:01:34 - [Stage 4] Epoch 032  loss/pix=-1.221375  recon/pix=-1.357486  kl/pix=0.136111
+2025-10-15 01:01:40 - [Stage 4] Epoch 033  loss/pix=-1.224417  recon/pix=-1.361754  kl/pix=0.137337
+2025-10-15 01:01:46 - [Stage 4] Epoch 034  loss/pix=-1.224141  recon/pix=-1.360626  kl/pix=0.136485
+2025-10-15 01:01:52 - [Stage 4] Epoch 035  loss/pix=-1.224448  recon/pix=-1.360893  kl/pix=0.136445
+2025-10-15 01:01:58 - [Stage 4] Epoch 036  loss/pix=-1.224678  recon/pix=-1.361748  kl/pix=0.137071
+2025-10-15 01:02:04 - [Stage 4] Epoch 037  loss/pix=-1.225520  recon/pix=-1.362658  kl/pix=0.137137
+2025-10-15 01:02:11 - [Stage 4] Epoch 038  loss/pix=-1.226743  recon/pix=-1.364438  kl/pix=0.137696
+2025-10-15 01:02:17 - [Stage 4] Epoch 039  loss/pix=-1.225863  recon/pix=-1.363462  kl/pix=0.137599
+2025-10-15 01:02:25 - [Stage 4] Epoch 040  loss/pix=-1.226902  recon/pix=-1.364810  kl/pix=0.137909
+2025-10-15 01:02:31 - [Stage 4] Epoch 041  loss/pix=-1.224807  recon/pix=-1.362396  kl/pix=0.137589
+2025-10-15 01:02:37 - [Stage 4] Epoch 042  loss/pix=-1.226863  recon/pix=-1.364986  kl/pix=0.138122
+2025-10-15 01:02:43 - [Stage 4] Epoch 043  loss/pix=-1.228218  recon/pix=-1.366945  kl/pix=0.138727
+2025-10-15 01:02:50 - [Stage 4] Epoch 044  loss/pix=-1.229887  recon/pix=-1.368843  kl/pix=0.138956
+2025-10-15 01:02:57 - [Stage 4] Epoch 045  loss/pix=-1.228423  recon/pix=-1.367339  kl/pix=0.138916
+2025-10-15 01:03:04 - [Stage 4] Epoch 046  loss/pix=-1.228104  recon/pix=-1.367116  kl/pix=0.139012
+2025-10-15 01:03:10 - [Stage 4] Epoch 047  loss/pix=-1.228428  recon/pix=-1.367327  kl/pix=0.138899
+2025-10-15 01:03:18 - [Stage 4] Epoch 048  loss/pix=-1.228918  recon/pix=-1.368201  kl/pix=0.139283
+2025-10-15 01:03:27 - [Stage 4] Epoch 049  loss/pix=-1.230718  recon/pix=-1.369971  kl/pix=0.139254
+2025-10-15 01:03:36 - [Stage 4] Epoch 050  loss/pix=-1.229960  recon/pix=-1.369453  kl/pix=0.139493
+2025-10-15 01:03:36 - [+] saved: experiments/pressvae_2025-10-15_00-58-14/pressvae_stage4.pt
