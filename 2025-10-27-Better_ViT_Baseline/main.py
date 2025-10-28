@@ -197,11 +197,12 @@ def main(args):
             with open(os.path.join(args.output_dir, "log.txt"), mode="a", encoding="utf-8") as f:
                 f.write(json.dumps(log_stats) + "\n")
 
-    # Save model after training is complete
-    if args.output_dir:
-        misc.save_model(
-            args=args, model=model, model_without_ddp=model_without_ddp,
-            optimizer=optimizer, loss_scaler=loss_scaler, epoch=epoch)
+        # Save checkpoint after each N epoch
+        N = 5
+        if (epoch + 1) % N == 0 or epoch == args.epochs - 1:
+            misc.save_model(
+                args=args, model=model, model_without_ddp=model_without_ddp,
+                optimizer=optimizer, loss_scaler=loss_scaler, epoch=epoch)
 
     total_time = time.time() - start_time
     total_time_str = str(datetime.timedelta(seconds=int(total_time)))
@@ -249,8 +250,6 @@ def train_one_epoch(model, data_loader,
         optimizer.zero_grad()
         loss_scaler(loss, optimizer, clip_grad=1.0,
                     parameters=model.parameters())
-
-        torch.cuda.synchronize()
 
         metric_logger.update(loss=loss_value)
         metric_logger.update(lr=lr)
